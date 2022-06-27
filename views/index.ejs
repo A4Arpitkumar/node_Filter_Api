@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+    <style>
+      h1 {
+          text-align: center;
+          background-color: black;
+          color: yellowgreen;
+          font-size: 70px;
+      }
+      label {
+          text-align: center;
+          color: rgb(7, 10, 1);
+          font-size: 30px;
+      }
+      input {
+          width: 200px;
+          height: 30px;
+      }
+  </style>
+  </head>
+  <body>
+    <div>
+      <form align="center" method="post" action="/getdata">
+        <p>
+            <label>Name : <input type="text" placeholder="Enter Name" name="name" /></label>
+        </p>
+
+        <p>
+            <label>Gender: <input type="text" placeholder="Enter Gender" name="gender" /></label>
+        </p>
+
+        <p>
+            <label>Phone: <input type="text" placeholder="Enter Phone" name="phone" /></label>
+        </p>
+
+        <p>
+            <label>Email: <input type="text" placeholder="Enter Email" name="email" /></label>
+        </p>
+        <p>
+          <label>City: <input type="text" placeholder="Enter City" name="city" /></label>
+      </p>
+      <p>
+        <label>State: <input type="text" placeholder="Enter State" name="state" /></label>
+    </p>
+    <p>
+      <label>Age: <input type="text" placeholder="Enter Age" name="age" /></label>
+  </p>
+
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+
+    </form>
+    </div>
+  </body>
+</html>
